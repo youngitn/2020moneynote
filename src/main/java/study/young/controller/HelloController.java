@@ -12,10 +12,10 @@ public class HelloController {
 
 	@GetMapping("/hello")
 	public String hello() {
-		logger.info("start");
+		String s = "hello moneynote";
+		System.out.println(s);
 
-		logger.info("end");
-		return "hello moneynote";
+		return s;
 	}
 
 }

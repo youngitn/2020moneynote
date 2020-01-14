@@ -9,6 +9,8 @@ public interface MemberMapper {
     int insert(Member record);
 
     Member selectByPrimaryKey(Long memberId);
+    
+    Member selectByNaturalKey(String memberAccount); 
 
     List<Member> selectAll();
 
